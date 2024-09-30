@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-inner-content {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    background-color: #2c2c2c;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px #2c2c2c;
+    z-index: 99;
+}
+
+.navbar > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #0084ff;
+}
+
+.logo > span {
+    color: #ffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon-container > img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.nav-icon-container img:first-child {
+    margin-right: 1rem;
+}
+
+nav ul li {
+    color: #ffff;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+.menu-button {
+    display: none;
+}
+
+header {
+    background-image: radial-gradient(#ffff, #c7c7c7);
+}
+
+.header-button-side {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 1rem;
+}
+
+.header-button-side-left {
+    height: 100%;
+    flex-basis: 50%;
+}
+
+.header-button-side-left > h2{
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.header-button-side-left > p {
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.header-button-side-left > button {
+    background-color: #0084ff;
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 3.8rem;
+    border-radius: 9999px;
+    color: #ffff;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.header-button-side-left > button:hover {
+    background-color: #004c94;
+}
+
+.header-button-side-right {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-button-side-righ > img {
+    width: 115%;
+    margin: 0 auto;
+}
+
